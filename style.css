@@ -1,0 +1,95 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    padding: 45px 55px;
+    border-radius: 22px;
+    text-align: center;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.3);
+}
+
+
+#counter {
+    font-size: 90px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 35px;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+    transition: transform 0.2s ease;
+}
+
+
+.buttons {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+
+button {
+    border: none;
+    padding: 14px 26px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+.inc {
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: white;
+}
+
+.dec {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    color: white;
+}
+
+.res {
+    background: linear-gradient(135deg, #f7971e, #ffd200);
+    color: #333;
+}
+
+
+button:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+
+button:active {
+    transform: scale(0.95);
+}
+
+.level {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+#message {
+    color: #ffd200;
+    font-weight: bold;
+    height: 24px;
+    margin-bottom: 15px;
+    transition: opacity 0.3s ease;
+}
